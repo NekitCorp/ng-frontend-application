@@ -18,7 +18,9 @@ export const QuestDetailCard: React.FC<QuestDetailCardProps> = ({ quest }) => {
 					<Image src='/cross.svg' alt='Cross icon' width={14} height={14} />
 				</Styled.CloseLink>
 
-				<Styled.Image src={quest.cover} width={748} height={270} alt={quest.title + 'Image'} />
+				<Styled.ImageWrapper>
+					<Styled.Image src={quest.cover} fill alt={quest.title + 'Image'} />
+				</Styled.ImageWrapper>
 
 				<Styled.InfoBlock>
 					<Styled.QuestTitle className={cinzel.className}>

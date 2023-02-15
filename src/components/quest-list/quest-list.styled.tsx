@@ -15,7 +15,6 @@ export const QuestList = styled.ul`
 
 	${(p) => p.theme.device.desktop} {
 		padding: ${(p) => p.theme.spacing['5xl']} ${(p) => p.theme.spacing['8xl']};
-		justify-content: flex-start;
 	}
 `;
 

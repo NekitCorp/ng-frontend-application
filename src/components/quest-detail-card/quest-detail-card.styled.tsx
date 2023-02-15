@@ -4,16 +4,16 @@ import styled from 'styled-components';
 import { TitleLineIcon } from '../icons';
 
 export const Wrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	padding: ${(p) => p.theme.spacing['3xs']} 0;
+	padding: ${(p) => p.theme.spacing['3xs']} ${(p) => p.theme.spacing['3xs']};
 
 	${(p) => p.theme.device.tablet} {
-		padding: ${(p) => p.theme.spacing.s} 0;
+		padding: ${(p) => p.theme.spacing.s} ${(p) => p.theme.spacing['3xs']};
 	}
 `;
 
 export const Card = styled.div`
+	max-width: 748px;
+	margin: 0 auto;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -27,6 +27,13 @@ export const CloseLink = styled(Link)`
 	position: absolute;
 	top: ${(p) => p.theme.spacing['2xs']};
 	right: ${(p) => p.theme.spacing['2xs']};
+	z-index: 2;
+`;
+
+export const ImageWrapper = styled.div`
+	width: 100%;
+	height: 270px;
+	position: relative;
 `;
 
 export const Image = styled(NextImage)`
