@@ -1,7 +1,7 @@
+import { QuestDetailCard } from '@/src/components/quest-detail-card/quest-detail-card';
 import { Quest, questEntity } from '@/src/db/quest-entity';
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 
 export const getStaticPaths: GetStaticPaths = async () => {
 	const quests = await questEntity.getQuests();
@@ -38,10 +38,7 @@ const QuestPage: NextPage<QuestPageProps> = ({ quest }) => {
 				<title>{quest.title}</title>
 			</Head>
 
-			<main style={{ background: '#fff', padding: 16 }}>
-				<Link href='/'>Back</Link>
-				{JSON.stringify(quest, null, 2)}
-			</main>
+			<QuestDetailCard quest={quest} />
 		</>
 	);
 };

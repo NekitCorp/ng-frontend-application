@@ -43,7 +43,7 @@ class QuestEntity {
 				difficulty: Math.floor(quest.rating),
 				experience: quest.stock * 100,
 				gold: quest.price,
-				type: '-',
+				type: 'Build',
 				cover: quest.thumbnail
 			};
 		});
@@ -70,7 +70,7 @@ class QuestEntity {
 			difficulty: Math.floor(questRes.rating),
 			experience: questRes.stock * 100,
 			gold: questRes.price,
-			type: '-',
+			type: 'Build',
 			cover: questRes.thumbnail,
 			description: questRes.description,
 			rewards: {

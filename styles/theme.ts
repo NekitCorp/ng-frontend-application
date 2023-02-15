@@ -10,8 +10,9 @@ export const defaultTheme = {
 	},
 	spacing: {
 		unset: 'unset',
-		'6xs': '2px',
-		'5xs': '4px',
+		'7xs': '2px',
+		'6xs': '4px',
+		'5xs': '6px',
 		'4xs': '8px',
 		'3xs': '12px',
 		'2xs': '16px',

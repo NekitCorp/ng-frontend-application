@@ -1,9 +1,13 @@
+import { Layout } from '@/src/components/layout/layout';
 import GlobalStyle from '@/styles/GlobalStyles';
 import { darkTheme } from '@/styles/theme';
+import { Cinzel, Lato } from '@next/font/google';
 import { QueryClient, QueryClientConfig, QueryClientProvider } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
+
+const cinzel = Cinzel({ subsets: ['latin'], weight: ['700'], display: 'swap' });
 
 const config: QueryClientConfig = {
 	defaultOptions: {
@@ -31,7 +35,9 @@ export default function App({ Component, pageProps }: AppProps) {
 			<QueryClientProvider client={queryClient}>
 				<ThemeProvider theme={darkTheme}>
 					<GlobalStyle />
-					<Component {...pageProps} />
+					<Layout mainClassName={cinzel.className}>
+						<Component {...pageProps} />
+					</Layout>
 				</ThemeProvider>
 			</QueryClientProvider>
 		</>
