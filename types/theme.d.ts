@@ -39,5 +39,10 @@ declare module 'styled-components' {
 			blue: string;
 			green: string;
 		};
+		device: {
+			mobile: string;
+			tablet: string;
+			desktop: string;
+		};
 	}
 }

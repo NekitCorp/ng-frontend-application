@@ -28,6 +28,11 @@ export const defaultTheme = {
 		'6xl': '140px',
 		'7xl': '160px',
 		'8xl': '180px'
+	},
+	device: {
+		mobile: '@media (max-width: 768px)',
+		tablet: '@media (min-width: 768px)',
+		desktop: '@media (min-width: 1024px)'
 	}
 };
 
