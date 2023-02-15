@@ -1,5 +1,5 @@
 import { QuestDetailCard } from '@/src/components/quest-detail-card/quest-detail-card';
-import { Quest, questEntity } from '@/src/db/quest-entity';
+import { QuestDetail, questEntity } from '@/src/db/quest-entity';
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 
@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps<QuestPageProps, { id: string }> = as
 };
 
 type QuestPageProps = {
-	quest: Quest;
+	quest: QuestDetail;
 };
 
 const QuestPage: NextPage<QuestPageProps> = ({ quest }) => {

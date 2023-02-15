@@ -1,12 +1,17 @@
+import { lato } from '@/styles/fonts';
 import { PropsWithChildren } from 'react';
-import { Lato } from '@next/font/google';
 
 import * as Styled from './quest-stats.styled';
 
-const lato = Lato({ subsets: ['latin'], weight: ['400'], display: 'swap' });
+export type QuestsStatProps = {
+	size: 's' | 'm';
+};
 
-export const QuestsStat: React.FC<PropsWithChildren> & { Row: typeof Row; Stat: typeof Stat } = ({ children }) => (
-	<Styled.Table className={lato.className}>
+export const QuestsStat: React.FC<PropsWithChildren<QuestsStatProps>> & { Row: typeof Row; Stat: typeof Stat } = ({
+	children,
+	size
+}) => (
+	<Styled.Table className={lato.className} size={size}>
 		<tbody>{children}</tbody>
 	</Styled.Table>
 );

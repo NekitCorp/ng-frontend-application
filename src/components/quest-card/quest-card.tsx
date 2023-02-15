@@ -1,4 +1,5 @@
 import type { Quest } from '@/src/db/quest-entity';
+import { cinzel } from '@/styles/fonts';
 import { Difficulty } from '../difficulty/difficulty';
 import { QuestsStat } from '../quest-stats/quest-stats';
 
@@ -13,8 +14,8 @@ export const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
 		<Styled.Card href={`/quest/${quest.id}`}>
 			<Styled.Image src={quest.cover} width={320} height={106} alt={quest.title + 'Image'} />
 			<Styled.InfoBlock>
-				<Styled.QuestTitle>{quest.title}</Styled.QuestTitle>
-				<QuestsStat>
+				<Styled.QuestTitle className={cinzel.className}>{quest.title}</Styled.QuestTitle>
+				<QuestsStat size='s'>
 					<QuestsStat.Row>
 						<QuestsStat.Stat name='Skill tree'>
 							<Styled.SkillTree>{quest.skillTree}</Styled.SkillTree>
