@@ -1,0 +1,21 @@
+{
+  "pageProps": {
+    "quest": {
+      "id": 1,
+      "skillTree": "smartphones",
+      "skill": "Apple",
+      "title": "iPhone X",
+      "difficulty": 4,
+      "experience": 3400,
+      "gold": 899,
+      "type": "Build",
+      "cover": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "rewards": {
+        "experience": 3400,
+        "gold": 899
+      }
+    }
+  },
+  "__N_SSG": true
+}

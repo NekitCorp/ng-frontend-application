@@ -12,9 +12,9 @@ type QuestDetailCardProps = {
 
 export const QuestDetailCard: React.FC<QuestDetailCardProps> = ({ quest }) => {
 	return (
-		<Styled.Wrapper>
+		<Styled.Wrapper data-id='quest-detail-card'>
 			<Styled.Card>
-				<Styled.CloseLink href='/'>
+				<Styled.CloseLink href='/' data-id='cross-link'>
 					<Image src='/cross.svg' alt='Cross icon' width={14} height={14} />
 				</Styled.CloseLink>
 
@@ -52,7 +52,7 @@ export const QuestDetailCard: React.FC<QuestDetailCardProps> = ({ quest }) => {
 							<Styled.ExpValue className={cinzel.className}>+{quest.rewards.experience}</Styled.ExpValue>
 						</Styled.Rewards>
 
-						<Styled.GoBack className={cinzel.className} href='/'>
+						<Styled.GoBack className={cinzel.className} href='/' data-id='go-back-button'>
 							Go back
 						</Styled.GoBack>
 					</Styled.Footer>

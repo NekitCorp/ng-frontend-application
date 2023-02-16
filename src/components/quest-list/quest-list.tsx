@@ -8,7 +8,7 @@ type QuestListProps = {
 
 export const QuestList: React.FC<QuestListProps> = ({ quests }) => {
 	return (
-		<Styled.QuestList>
+		<Styled.QuestList data-id='quest-list'>
 			{quests.map((quest) => (
 				<Styled.QuestListItem key={quest.id}>
 					<QuestCard quest={quest} />

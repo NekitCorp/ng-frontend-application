@@ -8,7 +8,8 @@
     "start": "next start",
     "check:lint": "next lint",
     "check:tsc": "tsc --noEmit",
-    "cypress": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser chrome"
   },
   "dependencies": {
     "@next/font": "^13.1.6",

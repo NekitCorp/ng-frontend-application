@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "skillTree": "smartphones",
+    "skill": "Apple",
+    "title": "iPhone 9",
+    "difficulty": 4,
+    "experience": 9400,
+    "gold": 549,
+    "type": "Build",
+    "cover": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+  },
+  {
+    "id": 2,
+    "skillTree": "smartphones",
+    "skill": "Apple",
+    "title": "iPhone X",
+    "difficulty": 4,
+    "experience": 3400,
+    "gold": 899,
+    "type": "Build",
+    "cover": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+  },
+  {
+    "id": 3,
+    "skillTree": "smartphones",
+    "skill": "Samsung",
+    "title": "Samsung Universe 9",
+    "difficulty": 4,
+    "experience": 3600,
+    "gold": 1249,
+    "type": "Build",
+    "cover": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+  }
+]

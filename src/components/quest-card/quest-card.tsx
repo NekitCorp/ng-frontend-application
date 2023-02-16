@@ -11,7 +11,7 @@ type QuestCardProps = {
 
 export const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
 	return (
-		<Styled.Card href={`/quest/${quest.id}`}>
+		<Styled.Card href={`/quest/${quest.id}`} data-id={`quest-card ${quest.id}`}>
 			<Styled.Image src={quest.cover} width={320} height={106} alt={quest.title + 'Image'} />
 			<Styled.InfoBlock>
 				<Styled.QuestTitle className={cinzel.className}>{quest.title}</Styled.QuestTitle>
